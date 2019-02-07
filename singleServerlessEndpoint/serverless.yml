@@ -1,0 +1,16 @@
+service: goldgate
+
+frameworkVersion: ">=1.1.0 <2.0.0"
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  region: us-east-2
+
+functions:
+  licenses:
+    handler: handler.endpoint
+    events:
+      - http:
+          path: licenses
+          method: get

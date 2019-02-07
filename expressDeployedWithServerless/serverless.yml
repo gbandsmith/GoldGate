@@ -1,0 +1,18 @@
+service: goldgate-express
+
+frameworkVersion: ">=1.1.0 <2.0.0"
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  region: us-east-2
+
+functions:
+  licenses:
+    handler: app.handler
+    events:
+          - http: ANY /
+          - http: 'ANY {proxy+}'
+
+plugins:
+  - serverless-offline
