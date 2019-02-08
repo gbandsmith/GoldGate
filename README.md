@@ -10,14 +10,21 @@ This is a performance testing project aiming to compare 3 equivalent lambda func
 
 ## Express Deployed With Serverless
 
-'''
+```
 serverless deploy
-'''
+```
 
 ## node Claudia
 
-### To run locally
-'''
+### To run it locally
+```
 npm install
 npm start
-'''
+```
+
+### To deploy it
+```
+claudia create {OPTIONS}
+```
+
+Please see [Claudia](https://claudiajs.com/documentation.html)
