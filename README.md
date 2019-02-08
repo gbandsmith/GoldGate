@@ -6,3 +6,18 @@ This is a performance testing project aiming to compare 3 equivalent lambda func
 - nodeClaudia : Is a NodeJs & Express app deployed to lambda using ClaudiaJs
 - singleServerlessEndpoint : Is an endpoint developped and deployed using Serverless Framework
 
+# Run the apps
+
+## Express Deployed With Serverless
+
+'''
+serverless deploy
+'''
+
+## node Claudia
+
+### To run locally
+'''
+npm install
+npm start
+'''
