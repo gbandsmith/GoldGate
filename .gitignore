@@ -67,3 +67,5 @@ claudia.json
 .serverless
 
 package-lock.json
+
+results/
