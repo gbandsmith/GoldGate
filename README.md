@@ -47,3 +47,26 @@ Please see [Claudia](https://claudiajs.com/documentation.html)
 ```
 serverless deploy 
 ```
+
+# Setup the external API
+
+We have setup an Amazon EC2 instance running over Debian. So the init.sh script is written with debian commands.
+
+Just run init.sh in order to install the dependencies.
+
+The init.sh does the following :
+
+```
+curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
+sudo apt-get install --assume-yes nodejs
+sudo apt-get install --assume-yes npm
+npm install artillery
+```
+
+Then write a simple node app that will return a JSON array (see server.js)
+
+To run the node server : 
+
+```
+node server.js
+```
